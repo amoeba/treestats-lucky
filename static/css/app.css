@@ -1,0 +1,29 @@
+@import "normalize.css";
+
+/* Uncomment these when you add files to variables, mixins or components */
+
+/* @import "variables/**.pcss"; */
+/* @import "mixins/**.pcss"; */
+/* For example, add `static/css/components/btn.pcss` and uncomment the next line */
+/* @import "components/**.pcss"; */
+
+body {
+  font: 16px monospace;
+  margin: 0;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  color: blue;
+  text-decoration: none;
+}
