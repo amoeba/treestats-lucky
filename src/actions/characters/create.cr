@@ -1,15 +1,26 @@
+require "json"
+
 class Characters::Create < BrowserAction
   action do
-    params = { 
-        name: "Test",
-        server: "Test",
-        level: "275",
-        race: "0",
-        gender: "0"
-    }
+    data = %({
+        "name": "Test",
+        "server": "Test",
+        "level": 275,
+        "race": 0,
+        "gender": 0
+    })
 
-    CharacterForm.new(**params).save
+    pp data
 
-    render_text "Saved"
+    parsed = JSON.parse(data)
+    pp parsed
+
+    nt = NamedTuple.from_json(parsed)
+    pp nt
+
+    # character = CharacterForm.new(**JSON.parse(data)).save
+    # pp character
+
+    render_text "Done"
   end
 end
