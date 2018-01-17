@@ -13,5 +13,5 @@ require "./pages/**"
 require "./handlers/**"
 require "../config/env"
 require "../config/**"
-
+require "./charms/**"
 Habitat.raise_if_missing_settings!

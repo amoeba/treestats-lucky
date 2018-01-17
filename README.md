@@ -1,6 +1,7 @@
 # TreeStats
 
-This is a project written using [Lucky](https://luckyframework.org). Enjoy!
+This is a project written using [Lucky](https://luckyframework.org).
+It's very much a work in progress and `master` is definitely broken.
 
 ### Setting up the project
 
